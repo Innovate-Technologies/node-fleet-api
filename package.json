@@ -18,5 +18,6 @@
     "url": "https://github.com/Innovate-Technologies/node-fleet-api/issues"
   },
   "dependencies": {
+    "restler": "^3.3.0"
   }
 }
