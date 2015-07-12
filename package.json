@@ -1,0 +1,22 @@
+{
+  "name": "node-fleet-api",
+  "version": "0.0.1",
+  "description": "A simple Node.JS module to interact with Fleet on CoreOS ",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Innovate-Technologies/node-fleet-api.git"
+  },
+  "keywords": [
+    "fleet",
+    "coreos",
+    "api"
+  ],
+  "author": "Maarten Eyskens <maarten@innovatete.ch>",
+  "license": "AGPL",
+  "bugs": {
+    "url": "https://github.com/Innovate-Technologies/node-fleet-api/issues"
+  },
+  "dependencies": {
+  }
+}
