@@ -61,7 +61,7 @@ module.exports = function(host) {
 	}
 
 	fleetexport.destroyUnit = function(unit, callback) {
-		rest.delete(host + "/fleet/v1/units/" + unit, {
+		rest.del(host + "/fleet/v1/units/" + unit, {
 			timeout: 100000
 		}).on("complete", function(data, info) {
 			if (typeof data.error !== "undefined") {
