@@ -87,6 +87,20 @@ module.exports = function(host) {
 			callback("timeout")
 		})
 	}
+	
+	fleetexport.getAllUnits = function(unit, callback) {
+		rest.get(host + "/fleet/v1/units/", {
+			timeout: 100000
+		}).on("complete", function(data, info) {
+			if (typeof data.error !== "undefined") {
+				callback(data)
+				return
+			}
+			callback(null, data)
+		}).on("timeout", function() {
+			callback("timeout")
+		})
+	}
 
 	return fleetexport;
 }
