@@ -21,6 +21,11 @@ for thr format of the JS object see [the official documentation](https://github.
 fleet.getUnit("name of unit",callback)
 ```
 
+### Get all units
+```
+fleet.getAllUnits(callback)
+``
+
 ### Start a unit file
 ```
 fleet.startUnit("name of unit",callback)
