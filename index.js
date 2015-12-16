@@ -101,6 +101,20 @@ module.exports = function(host) {
 			callback("timeout")
 		})
 	}
+	
+	fleetexport.getAllMachines = function(callback) {
+		rest.get(host + "/fleet/v1/machines", {
+			timeout: 100000
+		}).on("complete", function(data, info) {
+			if (typeof data.error !== "undefined") {
+				callback(data)
+				return
+			}
+			callback(null, data)
+		}).on("timeout", function() {
+			callback("timeout")
+		})
+	}
 
 	return fleetexport;
 }
