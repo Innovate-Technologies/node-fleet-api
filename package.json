@@ -12,7 +12,7 @@
     "coreos",
     "api"
   ],
-  "author": "Maarten Eyskens <maarten@innovatete.ch>",
+  "author": "Maartje Eyskens <maartje@innovatete.ch>",
   "license": "AGPL",
   "bugs": {
     "url": "https://github.com/Innovate-Technologies/node-fleet-api/issues"
