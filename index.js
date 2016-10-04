@@ -12,7 +12,7 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(new Error(JSON.parse(data.error)))
+					return reject(new Error(JSON.stringify(data.error)))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
@@ -33,7 +33,7 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(new Error(JSON.parse(data.error)))
+					return reject(new Error(JSON.stringify(data.error)))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
@@ -54,7 +54,7 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(new Error(JSON.parse(data.error)))
+					return reject(new Error(JSON.stringify(data.error)))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
@@ -69,7 +69,7 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(new Error(JSON.parse(data.error)))
+					return reject(new Error(JSON.stringify(data.error)))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
@@ -84,7 +84,7 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(new Error(JSON.parse(data.error)))
+					return reject(new Error(JSON.stringify(data.error)))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
@@ -99,7 +99,7 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(new Error(JSON.parse(data.error)))
+					return reject(new Error(JSON.stringify(data.error)))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
@@ -114,7 +114,7 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(new Error(JSON.parse(data.error)))
+					return reject(new Error(JSON.stringify(data.error)))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
