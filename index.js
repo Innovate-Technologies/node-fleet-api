@@ -12,12 +12,12 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(data)
+					return reject(new Error(data.error))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
 				reject(new Error("Time-out"))
-			})
+			}).on("error", reject)
 		})
 	}
 
@@ -33,12 +33,12 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(data)
+					return reject(new Error(data.error))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
-				reject("timeout")
-			})
+				reject(new Error("Time-out"))
+			}).on("error", reject)
 		})
 	}
 
@@ -54,12 +54,12 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(data)
+					return reject(new Error(data.error))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
-				reject("timeout")
-			})
+				reject(new Error("Time-out"))
+			}).on("error", reject)
 		})
 	}
 
@@ -69,12 +69,12 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(data)
+					return reject(new Error(data.error))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
-				reject("timeout")
-			})
+				reject(new Error("Time-out"))
+			}).on("error", reject)
 		})
 	}
 
@@ -84,12 +84,12 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(data)
+					return reject(new Error(data.error))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
-				reject("timeout")
-			})
+				reject(new Error("Time-out"))
+			}).on("error", reject)
 		})
 	}
 
@@ -99,12 +99,12 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(data)
+					return reject(new Error(data.error))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
-				reject("timeout")
-			})
+				reject(new Error("Time-out"))
+			}).on("error", reject)
 		})
 	}
 
@@ -114,12 +114,12 @@ module.exports = function (host) {
 				timeout: 100000
 			}).on("complete", function (data) {
 				if (typeof data.error !== "undefined") {
-					return reject(data)
+					return reject(new Error(data.error))
 				}
 				return resolve(data)
 			}).on("timeout", function () {
-				reject("timeout")
-			})
+				reject(new Error("Time-out"))
+			}).on("error", reject)
 		})
 
 	}
